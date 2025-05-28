@@ -42,6 +42,15 @@ case "$1" in
         echo "--help, -h          - wyświetla tę pomoc"
         ;;
 
+     --error|-e)
+        count=100
+        [[ "$2" =~ ^[0-9]+$ ]] && count=$2
+        mkdir -p errorx
+        for i in $(seq 1 $count); do
+            echo -e "Błąd numer $i\nSkrypt: $0\nData: $(date)" > "errorx/error$i.txt"
+        done
+        ;;
+
     *)
         echo "Nieznana opcja: $1"
         ;;
