@@ -35,11 +35,11 @@ case "$1" in
 
     --help|-h)
         echo "Dostępne opcje:"
-        echo "--date, -d          - wyświetla datę"
-        echo "--logs [N], -l N    - tworzy N (domyślnie 100) plików logx.txt"
-        echo "--error [N], -e N   - tworzy N (domyślnie 100) plików errorx/errorX.txt"
-        echo "--init              - klonuje repo https://github.com/dsw58476/learning.git i dodaje je do PATH"
-        echo "--help, -h          - wyświetla tę pomoc"
+        echo "--date, -d       - wyświetla datę"
+        echo "--logs [N], -l N - tworzy N (domyślnie 100) plików logx.txt"
+        echo "--error [N], -e N - tworzy N (domyślnie 100) plików errorx.txt"
+        echo "--init           - klonuje repozytorium i dodaje do PATH"
+        echo "--help, -h       - wyświetla pomoc"
         ;;
 
      --error|-e)
